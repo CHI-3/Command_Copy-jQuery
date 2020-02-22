@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "css/command_copy.css">
+		<title>Git（日本語）</title>
+	</head>
+	<body>
+        <h2>Git</h2>
+        <h3><span>リベース</span><div class = "info-mark">i<span class="info-text">作業ブランチにて、親ブランチベースでリベースします</span></div></h3>
+        <div class = "slidetoggle">
+            <table class="table table-sm">
+                <tr><th>親ブランチに切り替え（ローカルに有）</th><td><span>git checkout </span><input class = "same-value" name = "rebase-parent" type = "text" placeholder = "親ブランチ名を入力"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>親ブランチに切り替え（ローカルに無）</th><td><span>git checkout -b </span><input class = "same-value" name = "rebase-parent" type = "text" placeholder = "親ブランチ名を入力"><span> remotes/origin/</span><span class = "same-value3 text-danger" name = "rebase-parent">親ブランチ名</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>親ブランチを最新状態にする</th><td><span>git pull</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>作業ブランチに切り替え</th><td><span>git checkout </span><input class = "same-value" name = "rebase-work" placeholder = "作業ブランチ名"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>リベースする</th><td><span>git rebase </span><span class = "same-value text-danger" name = "rebase-parent">親ブランチ名</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>リモートに反映させる</th><td><span>git push -f</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+        <h3><span>ブランチの削除</span><div class = "info-mark">i<span class="info-text">ブランチを削除します</span></div></h3>
+        <div class = "slidetoggle">
+        <h4>ブランチの削除（ローカル）</h4>
+            <table class="table table-sm">
+                <tr><th>別のブランチに切り替え</th><td><span>git checkout </span><input class = "delete-branch" type = "text" placeholder = "削除ブランチ以外を入力"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>削除</th><td><span>git branch -D </span><input class = "delete-branch" type = "text" placeholder = "削除ブランチ名を入力"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        <h4>ブランチの削除（リモート）</h4>
+            <table class="table table-sm">
+                <tr><th>リモートブランチを削除</th><td><span>git push origin :</span><input class = "delete-branch" type = "text" placeholder = "削除ブランチ名を入力"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+		<script type = "text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+		<script type = "text/javascript" src = "js/command_copy.js"></script>
+	</body>
+</html>

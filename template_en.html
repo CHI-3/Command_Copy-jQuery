@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "css/command_copy.css">
+		<title>template_English</title>
+	</head>
+	<body>
+        <h2>title</h2>
+        <h3><span>heading-1. Only fixed value</span><div class = "info-mark">i<span class="info-text">Surround commands with span element.</span></div></h3>
+        <div class = "slidetoggle">
+            <table class="table table-sm">
+                <tr><th>Fixed value</th><td><span>fixed value</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+        <h3><span>heading-2. Fixed value and voluntary input values</span><div class = "info-mark">i<span class="info-text">Surround fixed values with span element and use input elements, type text for volantary values.</span></div></h3>
+        <div class = "slidetoggle">
+            <table class="table table-sm">
+                <tr><th>1 fixed value and 1 voluntary input values</th><td><span>fixed value</span><input type = "text" placeholder = "Input volantary value"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>2 fixed value and 1 voluntary input values</th><td><span>fixed value-1</span><input type = "text" placeholder = "Input volantary value"><span>fixed value-2</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+								<tr><th>2 fixed value and 2 voluntary input values</th><td><span>fixed value-1</span><input type = "text" placeholder = "Input volantary value-1"><span>fixed value-2</span><input type = "text" placeholder = "Input volantary value-2"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+				<h3><span>heading-3. Reflect input value to other parts</span><div class = "info-mark">i<span class="info-text">Use the class 'same-value' with input element and span element and apply same value to name attribute of them.</span></div></h3>
+				<div class = "slidetoggle">
+						<table class="table table-sm">
+								<tr><th>Input value for reflection</th><td><input class = "same-value" name = "input-value-reflection" type = "text" placeholder = "Input value for reflection"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+								<tr><th>Reflect input value when you focus out from textbox.</th><td><span class = "same-value text-danger" name = "input-value-reflection">Input value will be reflected here.</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+						</table>
+				</div>
+		<script type = "text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+		<script type = "text/javascript" src = "js/command_copy.js"></script>
+	</body>
+</html>

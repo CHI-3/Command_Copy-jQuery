@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "css/command_copy.css">
+		<title>Git:English</title>
+	</head>
+	<body>
+        <h2>Git</h2>
+        <h3><span>Rebase</span><div class = "info-mark">i<span class="info-text">At work branch, rebase based on the parent branch.</span></div></h3>
+        <div class = "slidetoggle">
+            <table class="table table-sm">
+                <tr><th>Checkout the parent branch when it's on your local environment.</th><td><span>git checkout </span><input class = "same-value" name = "rebase-parent" type = "text" placeholder = "Input the parent branch"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>Checkout the parent branch when it's not on your local environment.</th><td><span>git checkout -b </span><input class = "same-value" name = "rebase-parent" type = "text" placeholder = "Input the parent branch"><span> remotes/origin/</span><span class = "same-value3 text-danger" name = "rebase-parent">the parent branch</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>Update the parent branch.</th><td><span>git pull</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>Checkout the work branch.</th><td><span>git checkout </span><input class = "same-value" name = "rebase-work" placeholder = "Input the work branch"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>Do rebase.</th><td><span>git rebase </span><span class = "same-value text-danger" name = "rebase-parent">the parent branch</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>Reflect to remote repository.</th><td><span>git push -f</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+        <h3><span>Branch deletion</span><div class = "info-mark">i<span class = "info-text">Delete a branch.</span></div></h3>
+        <div class = "slidetoggle">
+        <h4>Branch deletion at local environment</h4>
+            <table class="table table-sm">
+                <tr><th>Checkout another branch.</th><td><span>git checkout </span><input class = "delete-branch" type = "text" placeholder = "Input the branch you won't delete"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>Do deletion.</th><td><span>git branch -D </span><input class = "delete-branch" type = "text" placeholder = "Input the branch you'll delete"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        <h4>Branch deletion at remote environment</h4>
+            <table class="table table-sm">
+                <tr><th>Delete a remote branch.</th><td><span>git push origin :</span><input class = "delete-branch" type = "text" placeholder = "Input the branch name you'll delete"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+		<script type = "text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+		<script type = "text/javascript" src = "js/command_copy.js"></script>
+	</body>
+</html>

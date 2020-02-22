@@ -1,0 +1,12 @@
+{
+
+    "name": "Command Copy!",
+    "description" : "Tool for copying command often used created by CHI-3",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "koma.png"
+    }
+
+  }

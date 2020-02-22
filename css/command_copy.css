@@ -1,0 +1,177 @@
+/*----------------------------------------------------
+  popup.html
+----------------------------------------------------*/
+li{
+	margin-bottom: 10px;
+}
+
+a{
+	color: #ba55d3;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #800080;
+	text-decoration: underline;
+}
+
+/*----------------------------------------------------
+	File for commands
+  コマンド記述用ファイル
+----------------------------------------------------*/
+
+/*
+ * Title
+ * タイトル
+ */
+h2{
+    position: relative;
+		color: #ffffff;
+		background-color: #007bff;
+}
+
+/*
+ * Heading
+ * 見出し
+ */
+h3{
+    position: relative;
+		color: #ffffff;
+		background-color: #17a2b8;
+}
+.slidetoggle{
+    display: none;
+}
+
+/*
+ * Information mark: i mark
+ * インフォメーション・マーク （iマーク）
+ */
+.info-mark{
+  position: absolute;
+  right:10px;
+	display: inline;
+	height:25px;
+	width:25px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	flex-flow: column;
+  color: #6c757d;
+  background-color: #ffffff;
+  font-style: italic;
+	top: 50%;
+	-webkit-transform : translateY(-50%);
+	transform : translateY(-50%);
+}
+.info-mark .info-text {
+	position: absolute;
+	z-index: 1;
+	top: -5px;
+	right: 105%;
+	visibility: hidden;
+	white-space: nowrap;
+	padding: 0.3em 0.5em;
+	transition: opacity 1s;
+	text-align: center;
+	opacity: 0;
+	border-radius: 6px;
+}
+.info-text{
+    font-size: medium;
+    font-style: normal;
+		color: #ffffff;
+		background-color: #6c757d;
+}
+.info-mark .info-text::after {
+		position: absolute;
+		top: 40%;
+		left: 104%;
+		margin-left: -5px;
+		content: ' ';
+		border: 5px solid transparent;
+		border-left-color: #6c757d;
+  	font-size: medium;
+}
+.info-text::after {
+    font-size: medium;
+    font-style: normal;
+}
+.info-mark:hover .info-text {
+		visibility: visible;
+		opacity: 1;
+}
+
+/*
+ * Copy button
+ * Copyボタン
+ */
+button{
+    float: right;
+}
+.cp_tooltip {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	background: linear-gradient(transparent 60%, #f19ec2 60%);
+	float: right;
+}
+.cp_tooltip .cp_tooltiptext {
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 0;
+	visibility: hidden;
+	width: auto;
+	white-space: nowrap;
+	padding: 0.3em 0.5em;
+	transition: opacity 1s;
+	text-align: center;
+	opacity: 0;
+	color: #ffffff;
+	border-radius: 6px;
+	background-color: #000000;
+	font-size: small;
+}
+.cp_tooltip .cp_tooltiptext::after {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	content: ' ';
+	border: 5px solid transparent;
+	border-top-color: #000000;
+	font-size: small;
+}
+.cp_tooltip:hover .cp_tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+/*
+ * Table
+ * テーブル
+ */
+th{
+    width: 25%;
+		background-color: #f5c6cb;
+}
+td{
+    width: 75%;
+}
+td span{
+    color: #007bff;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+}
+
+/*
+ * For sample
+ * サンプル用
+ */
+
+ .delete-branch{
+	 width: 30%;
+ }

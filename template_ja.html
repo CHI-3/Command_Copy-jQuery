@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "css/command_copy.css">
+		<title>テンプレート（日本語）</title>
+	</head>
+	<body>
+        <h2>タイトル</h2>
+        <h3><span>見出し-1. 固定値のみ</span><div class = "info-mark">i<span class="info-text">コマンド（固定値）をspanタグで囲みます。</span></div></h3>
+        <div class = "slidetoggle">
+            <table class="table table-sm">
+                <tr><th>固定値</th><td><span>固定値</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+        <h3><span>見出し-2. 固定値と任意の入力値</span><div class = "info-mark">i<span class="info-text">固定値をspanタグで囲み、任意の値を入力する箇所では、type属性をtextとしたinputタグで囲みます。</span></div></h3>
+        <div class = "slidetoggle">
+            <table class="table table-sm">
+                <tr><th>固定値 ＋ 入力値</th><td><span>固定値</span><input type = "text" placeholder = "任意の値を入力"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+                <tr><th>固定値 ＋ 入力値 ＋ 固定値</th><td><span>固定値1</span><input type = "text" placeholder = "任意の値を入力"><span>固定値2</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+								<tr><th>固定値 ＋ 入力値 ＋ 固定値＋ 入力値</th><td><span>固定値1</span><input type = "text" placeholder = "任意の値1を入力"><span>固定値2</span><input type = "text" placeholder = "任意の値2を入力"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+            </table>
+        </div>
+				<h3><span>見出し-3. 入力値を他の箇所に反映させる</span><div class = "info-mark">i<span class="info-text">input要素とspan要素に'same-value'クラスを適用し、name属性に同じ値を使用します。</span></div></h3>
+				<div class = "slidetoggle">
+						<table class="table table-sm">
+								<tr><th>反映させる値</th><td><input class = "same-value" name = "input-value-reflection" type = "text" placeholder = "反映させる値を入力"><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+								<tr><th>テキストボックスからフォーカスアウトすると、入力値が反映されます</th><td><span class = "same-value text-danger" name = "input-value-reflection">入力値がココに反映される</span><div class="cp_tooltip"><button type="button" class="btn-warning text-white">Copy</button><span class="cp_tooltiptext">Copy!</span></div></td></tr>
+						</table>
+				</div>
+		<script type = "text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+		<script type = "text/javascript" src = "js/command_copy.js"></script>
+	</body>
+</html>
